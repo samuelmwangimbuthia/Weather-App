@@ -2,7 +2,9 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "Weather App by Samuel Mwangi",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack"
+  },
   "author": "Samuel Mwangi",
   "license": "ISC",
   "dependencies": {
@@ -17,6 +19,7 @@
     "eslint": "^7.7.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "whatwg-fetch": "1.0.0"
   }
 }
