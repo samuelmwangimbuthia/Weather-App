@@ -8,11 +8,198 @@
     </head>
 
     <body>
-        <div class="main">
-            <button>Toggle</button>
-            <div class="content">Toggled content</div>
-        </div>
-        <script src='bundle.js'></script>
+        <main>
+            <header>
+                <div><span>smashit</span><span>Weather</span></div>
+                <div>
+                    <input type="text" placeholder="Search..">
+                </div>
+            </header>
+            <article>
+                <div class="container">
+                    <section>
+                        <table id="forecast">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Forecast</th>
+                                    <th colspan="2">
+                                        <select>
+                                            <option src="current">Current</option>
+                                            <option src="minutely">Minutely</option>
+                                            <option src="hourly">Hourly</option>
+                                            <option src="daily">Daily</option>
+                                        </select>
+                                        
+                                    </th>
+                                    <tr>
+                                        <th colspan="5">
+                                            <select>
+                                                <option src="temperature">Temperature</option>
+                                                <option src="wind">Wind</option>
+                                                <option src="precipitation">Precipitation</option>
+                                            </select>
+                                        </th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>5 Am</th>
+                                    <th>6 AM</th>
+                                    <th>7 AM</th>
+                                    <th>8 AM</th>
+                                    <th>9 AM</th>
+                                </tr>
+                                <tr>
+                                    <td>icon</td>
+                                    <td>icon</td>
+                                    <td>icon</td>
+                                    <td>icon</td>
+                                    <td>icon</td>
+                                </tr>
+                                <tr>
+                                    <td>3%</td>
+                                    <td>6%</td>
+                                    <td>8%</td>
+                                    <td>9%</td>
+                                    <td>7%</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <table id ="days">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Weather</th>
+                                    <th>High</th>
+                                    <th>Low</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>Sunny</td>
+                                    <td>35</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>Rainy</td>
+                                    <td>20</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>Cloudy</td>
+                                    <td>25</td>
+                                    <td>18</td>
+                                </tr>
+    
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <table id="wind-pressure">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>Wind</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Pressure</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <table id="details">
+                            <thead>
+                                <tr>
+                                    <th rowspan="5">Image</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>Feels Like</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Humidity</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Visibility</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Uv Index</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <table id="sun-moon">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Sun & Moon</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sunrise</td>
+                                    <td>sunset</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+             </article>
+            <aside>
+                <ul>
+                    <li>Click star to save cities</li>
+                </ul>
+                <ul>
+                    <li><a href="">NewYork</a></li>
+                    <li><a href="">Chicago</a></li>
+                    <li><a href="">Houston</a></li>
+                    <li><a href="">Nairobi</a></li>
+                    
+                </ul>
+            </aside>   
+            <div class="main">
+                <button>Toggle</button>
+                <div class="content">Toggled content</div>
+            </div>
+            <script src='bundle.js'></script>
+        </main>
     </body>
 
 </html>
