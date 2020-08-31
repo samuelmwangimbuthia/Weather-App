@@ -1,0 +1,33 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather App by Samuel Mwangi",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack.config.js",
+    "build": "webpack",
+    "lint": "eslint src/",
+    "start": "webpack-dev-server --open"
+  },
+  "author": "Samuel Mwangi",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.7.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "whatwg-fetch": "1.0.0"
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelmwangimbuthia/Weather-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuelmwangimbuthia/Weather-App/issues"
+  },
+  "homepage": "https://github.com/samuelmwangimbuthia/Weather-App#readme"
+}
