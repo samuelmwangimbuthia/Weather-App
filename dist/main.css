@@ -1,21 +1,33 @@
-
-
-html, body {
-  font-size: 1.2em;
-  
+:root {
+  font-size: 0.875em;
 }
 
-body {
-  font-family: Calibri, Arial, Helvetica, sans-serif;
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  border: 0.2em;
-  padding: 0.1em;
-  background-image: url(./pexels-sourav-mishra-1251293.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: rgb(250, 250, 250);
+::root,
+::before,
+::after {
+  font-size: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+                            
+@media (min-width: 800px) {      
+  :root {                        
+    font-size: 0.875em;          
+  }                              
+}                                 
+@media (min-width: 1200px) {   
+  :root {                      
+    font-size: 2em;            
+  }                            
+}
+
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+header {
+  background-color: #51aeec;
+  border-radius: .5em;
 }
 
 caption {
@@ -31,12 +43,15 @@ th {
   text-transform: capitalize;
   
 }
-td {
-  line-height: 2em;
+
+/* my locations sytles */
+a:link{
+  color: rgb(126, 168, 109);
 }
-a:link {
-  color: rgb(168, 109, 147);
-}
+
+a:visited {
+  color: rgb(230, 13, 13);
+} 
 
 
 a:hover {
@@ -47,24 +62,35 @@ a:active {
   color: rgb(71, 13, 230);
 }
 
-a:visited {
-  color: rgb(230, 13, 13);
-}
-
-* {
-  padding:0.2em;
-  border: 0.2em;
-  margin: 0.2em;
-}
-
-table {
-  border: 0.1em;
-  border-style: double;
-}
-li {
-  margin-bottom: 0.1em;
+.container {
+  display: table;
+  width: 100%;
+  background-color: #7b7b7bfc;
+  border-spacing: 1.5em 0;
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.5);
+  display: table-cell;
+  width: 70%;
+  background-color: #fff;
+  border-radius: .5em;
+  padding: 1.5em;
 }
+
+.sidebar {
+  display: table-cell;
+  width: 30%;
+  background-color: #fff;
+  border-radius: .5em;
+  padding: 1.5em;
+}
+
+table {
+  border: 0.2em;
+  border-style:solid;
+}
+li {
+  margin-bottom: 1em;
+}
+
+

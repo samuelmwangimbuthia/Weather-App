@@ -1,4 +1,4 @@
-export const toggle = () =>{
+/*export const toggle = () =>{
     const button = document.querySelector('button');
     const content = document.querySelector('.content');
 
@@ -7,3 +7,4 @@ export const toggle = () =>{
     })
 
 }
+*/

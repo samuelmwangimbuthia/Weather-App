@@ -1,24 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather App</title>
         <link rel="stylesheet" href="main.css">
+        <!-- <link rel="stylesheet" href="flex.css"> -->
     </head>
 
     <body>
-        <main>
-            <header>
-                <div><span>smashit</span><span>Weather</span></div>
-                <div>
-                    <input type="text" placeholder="Search..">
+        <header class="header">
+            <h1><span>smashit</span><span>Weather</span></h1>
+            <div>
+                <input type="text" placeholder="Search..">
+            </div>
+        </header>
+
+        <div class="container">
+            <aside class="sidebar">
+                <div class="widget">Click star to save cities
+                    <ul>
+                        <li></li>
+                    </ul>
                 </div>
-            </header>
-            <article>
-                <div class="container">
-                    <section>
-                        <table id="forecast">
+                <div class="widget">Major Cities
+                    <p class="button-link" id="nairobi"><a href="ccc.vfg">Nairobi</a></p>
+                    <p class="button-link"><a href="ccc.vfg">Kampala</a></p>
+                    <p class="button-link"><a href="ccc.vfg">Daresalam</a></p>
+                    <p class="button-link"><a href="ccc.vfg">Juba</a></p>
+                    <p class="button-link"><a href="ccc.vfg">Kigali</a></p>
+                </div>
+            </aside>
+
+            <main class="main clearfix">
+                <h2>The Weather Pattern</h2>
+                <div>
+                    <div class="media" class="forecast">
+                        <table>
                             <thead>
                                 <tr>
                                     <th colspan="3">Forecast</th>
@@ -74,11 +92,9 @@
                                 </tr>
                             </tfoot>
                         </table>
-                    </section>
-                </div>
-                <div>
-                    <section>
-                        <table id ="days">
+                    </div>
+                    <div class="media" class="days">             
+                        <table>
                             <thead>
                                 <tr>
                                     <th>Day</th>
@@ -106,20 +122,15 @@
                                     <td>25</td>
                                     <td>18</td>
                                 </tr>
-    
+
                             </tbody>
                             <tfoot></tfoot>
                         </table>
-                    </section>
-                </div>
-                <div>
-                    <section>
-                        <table id="wind-pressure">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">Image</th>
-                                </tr>
-                            </thead>
+                    </div>
+                    <div class="media" class="wind-pressure">
+                        <img class="media-image">
+                        <table class="media-body">
+                            <thead></thead>
                             <tbody>
                                 <tr>
                                     <td></td>
@@ -132,46 +143,40 @@
                             </tbody>
                             <tfoot></tfoot>
                         </table>
+                    </div>
+                    <section class="media" class="details">
+                        <h3>
+                            <span>Details</span>
+                        </h3>
+                        <div>
+                            <div id="icon"></div>
+                            <div id="details">
+                                <ul>
+                                    <li>
+                                        <div>Feels Like</div>
+                                        <div id="feelsLike"></div>
+                                    </li>
+                                    <li>
+                                        <div>Humidity</div>
+                                        <div id="humidity"></div>
+                                    </li>
+                                    <li>
+                                        <div>Visibility</div>
+                                        <div id="visibility"></div>
+                                    </li>
+                                    <li>
+                                        <div>UV Index</div>
+                                        <div id="uvIndex"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </section>
-                </div>
-                <div>
-                    <section>
-                        <table id="details">
-                            <thead>
-                                <tr>
-                                    <th rowspan="5">Image</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td>Feels Like</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Humidity</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Visibility</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Uv Index</td>
-                                </tr>
-                            </tbody>
-                            <tfoot></tfoot>
-                        </table>
-                    </section>
-                </div>
-                <div>
-                    <section>
-                        <table id="sun-moon">
-                            <thead>
-                                <tr>
-                                    <th colspan="3">Sun & Moon</th>
-                                </tr>
-                            </thead>
+                    <div class="media" class="sun-moon">
+                        <img class="media-image">
+                        <table class="media-body" >
+                            <thead></thead>
                             <tbody>
                                 <tr>
                                     <td>sunrise</td>
@@ -179,27 +184,13 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </section>
+                    </div>
                 </div>
-             </article>
-            <aside>
-                <ul>
-                    <li>Click star to save cities</li>
-                </ul>
-                <ul>
-                    <li><a href="">NewYork</a></li>
-                    <li><a href="">Chicago</a></li>
-                    <li><a href="">Houston</a></li>
-                    <li><a href="">Nairobi</a></li>
-                    
-                </ul>
-            </aside>   
-            <div class="main">
-                <button>Toggle</button>
-                <div class="content">Toggled content</div>
-            </div>
-            <script src='bundle.js'></script>
-        </main>
+            </main>
+
+        </div> 
+        <script src='bundle.js'></script>
+        
     </body>
 
 </html>
